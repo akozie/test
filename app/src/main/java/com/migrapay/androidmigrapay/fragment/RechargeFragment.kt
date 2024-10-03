@@ -3,7 +3,6 @@ package com.migrapay.androidmigrapay.fragment
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -126,7 +125,6 @@ class RechargeFragment : Fragment() {
                             editTextPhone.setText(onlyDigits.substring(0, 10)) // Trim to 10 digits
                             editTextPhone.setSelection(10) // Move cursor to the end
                             binding.materialButton.visibility = View.VISIBLE
-                            Log.d("SELECTED_COUNTRY", "${countryCodePicker.fullNumber}")
                         }
                     }
                 }
@@ -136,14 +134,16 @@ class RechargeFragment : Fragment() {
                     start: Int,
                     count: Int,
                     after: Int,
-                ) {}
+                ) {
+                }
 
                 override fun onTextChanged(
                     s: CharSequence?,
                     start: Int,
                     before: Int,
                     count: Int,
-                ) {}
+                ) {
+                }
             },
         )
 
