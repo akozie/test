@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.migrapay.androidmigrapay.R
 import com.migrapay.androidmigrapay.databinding.FragmentHomeBinding
 
@@ -29,7 +30,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.mobileRecharge.setOnClickListener {
-            // findNavController().navigate(R.id.action_homeFragment_to_rechargeFragment)
+            findNavController().navigate(R.id.action_homeFragment_to_rechargeFragment)
         }
     }
 }

@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_color">#EBF1F7</color>
     <color name="text_color">#3A4856</color>
+    <color name="search_stroke_color">#D3D6E0</color>
+    <color name="search_icon_color">#ABB5C5</color>
+    <color name="recharge_bg_color">#F8FCFF</color>
+    <color name="steps_color">#6D7A8D</color>
 </resources>

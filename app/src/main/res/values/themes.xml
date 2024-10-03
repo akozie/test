@@ -19,4 +19,8 @@
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
 
+    <style name="SearchViewStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@color/search_icon_color</item> <!-- Color for the search icon -->
+    </style>
+
 </resources>
